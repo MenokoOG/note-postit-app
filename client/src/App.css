@@ -1,0 +1,142 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background-color: rgb(64, 231, 236);
+}
+
+/* Input Styles */
+input {
+    background-color: white;
+    margin: 16px;
+}
+
+/* Button Styles */
+button {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Error Message */
+.errMssg {
+    color: red;
+}
+
+/* Profile Header */
+.profile-header {
+    margin: 10px;
+    text-align: center;
+}
+
+/* Note List */
+.note-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Note Styles */
+.note, .editing-note, .first-note {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: "Reenie Beanie", cursive;
+    color: #000;
+    background: #1cc6bb;
+    height: 12em; /* Increased height */
+    width: 12em;  /* Increased width */
+    padding: 1.5em; /* Increased padding */
+    cursor: pointer;
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+    transform: rotate(-6deg);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.note:hover, .editing-note:hover, .first-note:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: rotate(0deg);
+}
+
+.note > h1, .editing-note > h2, .editing-note > p, .first-note > h1 {
+    background: #1cc6bb;
+    font-size: 1.2em; /* Increased font size */
+}
+
+/* First Note Image */
+.first-img {
+    width: 85px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+/* Paragraphs */
+p {
+    font-style: oblique;
+    margin: 15px;
+}
+
+/* Authentication Page */
+.auth-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://media1.giphy.com/media/iqatr9kJTDezD9YLpZ/giphy.webp?cid=790b7611ii6w26sa4mfmw3ju5laqmqsxea2bh2vcr5jlrdq6&ep=v1_gifs_search&rid=giphy.webp&ct=g');
+}
+
+/* Authentication Form */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    align-items: center;
+    padding: 5px;
+    margin: 15px;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 32px 4px, rgba(255, 255, 255, 0.8) -6px -2px 32px 4px;
+}
+
+.auth-header {
+    padding: 10px;
+}
+
+.auth-form > button {
+    background-color: white;
+    max-width: fit-content;
+}
+
+.auth-question {
+    margin: 12px;
+    cursor: pointer;
+}
+
+/* Note Container */
+/* Uncomment and add styles if needed
+.note-container {
+    background-image: url('https://media1.giphy.com/media/iqatr9kJTDezD9YLpZ/giphy.webp?cid=790b7611ii6w26sa4mfmw3ju5laqmqsxea2bh2vcr5jlrdq6&ep=v1_gifs_search&rid=giphy.webp&ct=g');
+}
+*/
+
+/* Example of a rainbow box shadow 
+box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+*/
